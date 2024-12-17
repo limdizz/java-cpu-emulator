@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cpuemulator.HelloController">
+   <children>
+      <Button fx:id="addButton" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#addInstruction" text="Add Instruction" />
+      <Button fx:id="removeButton" layoutX="129.0" layoutY="16.0" mnemonicParsing="false" onAction="#removeInstruction" text="Remove Instruction" />
+      <Button fx:id="moveUpButton" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Move Up" />
+      <Button fx:id="moveDownButton" layoutX="129.0" layoutY="55.0" mnemonicParsing="false" text="Move Down" />
+      <Button fx:id="resetButton" layoutX="265.0" layoutY="55.0" mnemonicParsing="false" onAction="#reset" style="-fx-background-color: red;" text="Reset" textFill="WHITE" />
+      <ListView fx:id="instructionListView" layoutY="97.0" prefHeight="303.0" prefWidth="350.0" />
+      <TextArea fx:id="registerArea" editable="false" layoutX="350.0" layoutY="27.0" prefHeight="71.0" prefWidth="251.0" />
+      <TextArea fx:id="statistics" editable="false" layoutX="350.0" layoutY="300.0" prefHeight="100.0" prefWidth="251.0" />
+      <TextArea fx:id="memoryArea" editable="false" layoutX="350.0" layoutY="127.0" prefHeight="145.0" prefWidth="251.0" />
+      <Button fx:id="stepButton" layoutX="265.0" layoutY="16.0" mnemonicParsing="false" onAction="#executeStep" text="Execute" />
+      <Label layoutX="361.0" layoutY="7.0" text="Registers" />
+      <Label layoutX="361.0" layoutY="107.0" text="Memory" />
+      <Label layoutX="361.0" layoutY="278.0" text="Popular instructions" />
+   </children>
+</AnchorPane>
